@@ -1,4 +1,5 @@
 $(document).ready(function(){
+    // popup tambah kriteria
     $('.popup-btn').click(function(){ 
         var popupBlock = $('#'+$(this).data('popup'));
         popupBlock.addClass('active')
@@ -10,4 +11,14 @@ $(document).ready(function(){
             }, 600);
         });
     });
+
+    // add class pages
+    if ($('body .about-us').length) {
+        $('body').removeClass('home-index-index');
+        $('body').addClass('about-us-index');
+    }
+    if ($('body .home').length) {
+        $('body').removeClass('about-us-index');
+        $('body').addClass('home-index-index');
+    }
 });
