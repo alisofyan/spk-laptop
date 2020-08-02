@@ -21,4 +21,14 @@ $(document).ready(function(){
         $('body').removeClass('about-us-index');
         $('body').addClass('home-index-index');
     }
+
+
+
+    // popup hasil
+    $('.hasil .open-popup').click(function(){ 
+        $('.hasil .sidebar').show();
+    });
+    $('.hasil .cancel.alternatif').click(function(){ 
+        $('.hasil .sidebar').hide();
+    });
 });

@@ -12,7 +12,13 @@
                 <div class="after-input">
                     <ul class="list-group">
                         <li class="list-group-item">
-                            <span>ASUS ROG STRIX GL503GE</span>
+                            <span>Gigabyte Aero 15-Y9 i9-8950HK</span>
+                            <a href=""  data-toggle="tooltip" data-placement="top" title="Hapus alternatif" >
+                                <img src="<?= base_url(); ?>/assets/app/images/remove.png" alt="remove" width="35"/>
+                            </a>
+                        </li>
+                        <li class="list-group-item">
+                            <span>MSI GT75 Titan 8SG i9-8950HK</span>
                             <a href=""  data-toggle="tooltip" data-placement="top" title="Hapus alternatif" >
                                 <img src="<?= base_url(); ?>/assets/app/images/remove.png" alt="remove" width="35"/>
                             </a>
@@ -24,19 +30,13 @@
                             </a>
                         </li>
                         <li class="list-group-item">
-                            <span>ASUS ROG STRIX GL503GE</span>
+                            <span>Predator Helios 300 with Intel 9th gen</span>
                             <a href=""  data-toggle="tooltip" data-placement="top" title="Hapus alternatif" >
                                 <img src="<?= base_url(); ?>/assets/app/images/remove.png" alt="remove" width="35"/>
                             </a>
                         </li>
                         <li class="list-group-item">
-                            <span>ASUS ROG STRIX GL503GE</span>
-                            <a href=""  data-toggle="tooltip" data-placement="top" title="Hapus alternatif" >
-                                <img src="<?= base_url(); ?>/assets/app/images/remove.png" alt="remove" width="35"/>
-                            </a>
-                        </li>
-                        <li class="list-group-item">
-                            <span>ASUS ROG STRIX GL503GE</span>
+                            <span>Acer Nitro 7 with Intel 9th gen</span>
                             <a href=""  data-toggle="tooltip" data-placement="top" title="Hapus alternatif" >
                                 <img src="<?= base_url(); ?>/assets/app/images/remove.png" alt="remove" width="35"/>
                             </a>
