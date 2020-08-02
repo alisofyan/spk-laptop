@@ -1,28 +1,58 @@
 <div class="container-fluid home">
     <div class="page-main">
-        <!-- info -->
-        <div class="info">        
+        <!-- title -->
+        <div class="title">        
             <h1>Sistem Pendukung Keputusan Pemilihan Laptop Gaming</h1>
         </div>
-        <!-- alter added -->
-        <div class="after-input">
-            <ul class="list-group">
-                <li class="list-group-item">
-                    <span>ASUS ROG STRIX GL503GE</span>
-                    <a href=""  data-toggle="tooltip" data-placement="top" title="Hapus alternatif" ><i class="fas fa-minus-circle"></i></a>
-                </li>
-                <li class="list-group-item">
-                    <span>ASUS ROG STRIX GL503GE</span>
-                    <a href=""  data-toggle="tooltip" data-placement="top" title="Hapus alternatif" ><i class="fas fa-minus-circle"></i></a>
-                </li>
-            </ul>
-        </div>
-        <!-- button action-->
-        <div class="action-button">
-            <button type="button" class="main-btn-rect popup-btn" data-popup="popup-reg">Tambah Alternif</button>
-            <a href="<?= base_url(); ?>hasil" type="button" class="main-btn-rect action-hitung">HITUNG</a>
-        </div>
+          
 
+        <div class="main"> 
+            <div class="content">
+                <!-- alter added -->
+                <div class="after-input">
+                    <ul class="list-group">
+                        <li class="list-group-item">
+                            <span>ASUS ROG STRIX GL503GE</span>
+                            <a href=""  data-toggle="tooltip" data-placement="top" title="Hapus alternatif" >
+                                <img src="<?= base_url(); ?>/assets/app/images/remove.png" alt="remove" width="35"/>
+                            </a>
+                        </li>
+                        <li class="list-group-item">
+                            <span>ASUS ROG STRIX GL503GE</span>
+                            <a href=""  data-toggle="tooltip" data-placement="top" title="Hapus alternatif" >
+                                <img src="<?= base_url(); ?>/assets/app/images/remove.png" alt="remove" width="35"/>
+                            </a>
+                        </li>
+                        <li class="list-group-item">
+                            <span>ASUS ROG STRIX GL503GE</span>
+                            <a href=""  data-toggle="tooltip" data-placement="top" title="Hapus alternatif" >
+                                <img src="<?= base_url(); ?>/assets/app/images/remove.png" alt="remove" width="35"/>
+                            </a>
+                        </li>
+                        <li class="list-group-item">
+                            <span>ASUS ROG STRIX GL503GE</span>
+                            <a href=""  data-toggle="tooltip" data-placement="top" title="Hapus alternatif" >
+                                <img src="<?= base_url(); ?>/assets/app/images/remove.png" alt="remove" width="35"/>
+                            </a>
+                        </li>
+                        <li class="list-group-item">
+                            <span>ASUS ROG STRIX GL503GE</span>
+                            <a href=""  data-toggle="tooltip" data-placement="top" title="Hapus alternatif" >
+                                <img src="<?= base_url(); ?>/assets/app/images/remove.png" alt="remove" width="35"/>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- button action-->
+                <div class="action-button">
+                    <button type="button" class="main-btn-rect popup-btn" data-popup="popup-reg">Tambah Alternatif</button>
+                    <a href="<?= base_url('hasil'); ?>" type="button" class="main-btn-rect action-hitung">HITUNG</a>
+                </div>
+            </div>
+            <div class="image">
+                <img src="<?= base_url(); ?>/assets/app/images/laptop-home.png" alt="laptop"/>
+            </div>
+        </div>
     </div>
 
 
@@ -93,7 +123,7 @@
 
                 <div class="form-group action">
                     <button type="submit" class="main-btn-rect" name="text" value="Send">
-                    <i class="fa fa-paper-plane"></i>Send</button>
+                    <i class="fa fa-paper-plane"></i>Tambah</button>
                 </div>
             </form>
             <span class="fade-out main-btn-circle">╳</span>
