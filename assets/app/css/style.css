@@ -17,26 +17,6 @@ button, input, optgroup, select, textarea{
   font-family: 'Montserrat', sans-serif;
 }
 
-/* Navbar */
-nav.navbar {
-  background: #121010;
-  padding-right: 50px;
-  padding-left: 50px;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 500;
-  text-transform: uppercase;
-  padding-bottom: 0;
-}
-nav.navbar .nav-link{
-  color: #F0B676;
-  margin-right: 15px;
-}
-nav.navbar .nav-link:hover{
-  color: #fff;
-}
-.navbar-nav{
-  margin-right: 20px;
-}
 .about-us-index .about-index{
   border-bottom: 2px solid;
 }
@@ -67,6 +47,43 @@ nav.navbar .nav-link:hover{
 }
 
 
+/* Navbar */
+nav.navbar {
+  background: #121010;
+  padding-right: 50px;
+  padding-left: 50px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  padding-bottom: 0;
+}
+nav.navbar .nav-link{
+  color: #F0B676;
+  margin-right: 15px;
+}
+nav.navbar .nav-link:hover{
+  color: #fff;
+}
+.navbar-nav{
+  margin-right: 20px;
+}
+
+/* footer */
+footer{
+  text-align: center;
+  background: rgb(34,30,31);
+  background: linear-gradient(95deg, rgba(34,30,31,1) 44%, rgba(18,16,16,1) 56%, rgba(18,16,16,1) 100%);
+}
+
+footer p{
+  display: inline-block;
+  letter-spacing: 1px;
+  font-size: 15px;
+  font-family: 'Montserrat', sans-serif;
+  color: #eaeaea;
+  margin-bottom: 0;
+  padding: 7px 0;
+}
 
 /* Home */
 .home{
@@ -99,7 +116,7 @@ nav.navbar .nav-link:hover{
   border-radius: 20px;
   padding: 0;
   border: none;
-  color: #fff;
+  color: #eaeaea;
   background: none;
 }
 .home .after-input li span{
@@ -113,6 +130,144 @@ nav.navbar .nav-link:hover{
 .home .main .action-button{
   margin-top: 40px;
 }
+
+
+/* Hasil  */
+.hasil{
+  padding: 0 ;
+  padding-bottom: 100px;
+}
+.hasil .open-popup{
+  display: none;
+  font-family: 'Roboto', sans-serif;
+  color: #221E1F;
+  background-color: #F0B676;
+  text-transform: uppercase;
+  font-size: 21px;
+  letter-spacing: 1px;
+  outline: none;
+  cursor: pointer;
+  z-index: 100;
+  margin: 10px auto 20px;
+  font-weight: 600;
+  padding: 20px;
+}
+.hasil .cancel.alternatif{
+  display: none;
+  width: 100%;
+  float: none;
+  font-family: 'Roboto', sans-serif;
+  color: #221E1F;
+  background-color: #ff4e4e;
+  text-transform: uppercase;
+  font-size: 15px;
+  letter-spacing: 1px;
+  outline: none;
+  cursor: pointer;
+  z-index: 100;
+  margin: 10px auto 20px;
+  font-weight: 600;
+  padding: 20px;
+  color: #fff;
+}
+.hasil .jumbotron {
+  background-image: url(../images/banner.png);
+  min-height: 300px;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: 0 450px;
+}
+
+.hasil .jumbotron h1{
+  max-width: 650px;
+  text-align: center;
+  margin: auto;
+  text-transform: uppercase;
+  color: #eaeaea;
+}
+.hasil .page-main{
+  padding: 15px;
+  max-width: 1600px;
+  margin: auto;
+}
+.hasil .sidebar{
+  width: 30%;
+  display: inline-block;
+}
+.hasil .content{
+  width: 68%;
+  display: inline-block;
+  position: relative;
+  min-height: 100px;
+  float: right;
+}
+.hasil .card{
+  display: block;
+  margin-bottom: 13px;
+  border: 2px solid #F0B676;
+}
+.hasil .card:hover{
+  border: 1px solid;
+  box-shadow: 5px 10px 8px #888888;
+}
+
+.hasil .card-header{
+  width: 10%;
+  display: inline-block;
+  height: 80px;
+  position: relative;
+  max-width: 70px;
+  background: #F0B676;
+  border: 1px solid #F0B676;
+  color: #fff;
+  padding-left: 0;
+  padding-right: 0;
+  text-align: center;
+}
+.hasil .card-header span{
+  font-size: 30px;
+}
+.hasil .card-body{
+  display: inline-block;
+  width: 89%;
+}
+.hasil .alter-name{
+  font-weight: 500;
+  letter-spacing: 1px;
+  font-size: 22px;
+  text-transform: uppercase;
+}
+.hasil .alter-nilai{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding-right: 10px;
+  font-size: 18px;
+}
+.hasil .pre-tittle{
+  margin-bottom: 10px;
+  text-align: center;
+}
+.hasil .pre-tittle .judul{
+  font-size: 26px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.hasil .keterangan{
+  width: 100%;
+  text-align: left;
+  margin-top: 25px;
+  font-size: 17px;
+}
+.hasil .ket-no{
+  width: 11%;
+  display: inline-block;
+}
+.hasil .ket-alter{
+  display: inline-block;
+  width: 80%;
+}
+
 
 
 
@@ -150,7 +305,7 @@ nav.navbar .nav-link:hover{
   left: 0;
 }
 .about-us .main .content span{
-  color:#fff;
+  color: #eaeaea;
   font-size: 1.6rem;
   letter-spacing: 1px;
   line-height: 1.3;
@@ -182,7 +337,7 @@ nav.navbar .nav-link:hover{
   text-decoration: none;
 }
 .about-us .card .card-body{
-  color: #fff;
+  color: #eaeaea;
 }
 .about-us .card-header{
   border: none;
@@ -507,7 +662,9 @@ form#send .main-btn-rect i {
     text-align: center;
     font-size: 2.5rem;
   }
-
+  .hasil .jumbotron{
+    background-position: -450px 450px;
+  }
   /* Home */
   .home .main .content{
     width: 100%;
@@ -518,6 +675,48 @@ form#send .main-btn-rect i {
   .home .main .image{
     width: 80%;
   }
+
+  /* Hasil */
+  .hasil .sidebar{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: white;
+    margin: auto;
+    display: block;
+    z-index: 99;
+    top: 0;
+    left: 0;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    overflow-y: scroll;
+    display: none;
+  }
+  .hasil .open-popup{
+    display: block;
+  }
+  .hasil .content{
+    width: 100%;
+  }
+  .hasil .card-header{
+    width: 25%;
+  }
+
+  .hasil .form-group.action{
+    display: block;
+  }
+  .hasil form#send .main-btn-rect{
+    width: 100%;
+    display: block;
+    float: none;
+    margin-bottom: 15px;
+    background-color: #7698f0;
+    color: #fff;
+  }
+  .hasil .cancel.alternatif{
+    display: block;
+  }
+
 
   /* About Us */
   .about-us .main{

@@ -28,7 +28,7 @@
 
                             <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion-faq">
                             <div class="card-body">
-                                    Pergi ke halaman <a href="<?= base_url(); ?>" style="color:#F0B676;">Home</a>, kemudian klik masukan alternatif, lalu masukan spesifikasi laptop yang ingin anda jadikan alternatif, jika sudah kemudian klik Hitung maka anda akan mendapatkan hasil dari perhitungan SAW, dan urutan laptop mana yang terbaik untuk anda.
+                                    Pergi ke halaman <a href="<?= base_url(); ?>" style="color:#F0B676;">Home</a>, kemudian klik tambah alternatif, lalu masukan spesifikasi laptop yang ingin anda jadikan alternatif, jika sudah kemudian klik Hitung maka anda akan mendapatkan hasil dari perhitungan SAW, dan urutan laptop mana yang terbaik untuk anda.
                             </div>
                             </div>
                         </div>
