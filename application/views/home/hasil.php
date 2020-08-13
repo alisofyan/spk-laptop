@@ -18,9 +18,9 @@
                     <h6>Tambah Alternatif</h6>
                 </div>
                 <hr>
-                <form id="send" class="send-form">
+                <form id="send" class="send-form" action="<?= base_url('tambah_hitung') ?>" method="POST">
                     <div class="form-group">
-                        <input type="text" placeholder="Masukan merk dan seri laptop" id="merk" name="merk" required="required">
+                        <input type="text" placeholder="Masukan merk dan seri laptop" id="merek" name="merek" required="required">
                         <label for="merk">
                             <span>Merk</span>
                         </label>
@@ -34,36 +34,35 @@
                     </div>
                 
                     <div class="form-group">    
-                        <select class="custom-select" id="vga">
+                        <select class="custom-select" id="vga" name="vga">
                             <option selected>Pilih VGA</option>
-                            <option value="2">2 GB</option>
-                            <option value="4">4 GB</option>
-                            <option value="8">8 GB</option>
-                            <option value="16">16 GB</option>
-                            <option value="32">32 GB</option>
+                            <option value="1">2 GB</option>
+                            <option value="2">4 GB</option>
+                            <option value="3">8 GB</option>
+                            <option value="4">16 GB</option>
+                            <option value="5">32 GB</option>
                         </select>
                         <label class="label vga" for="vga">VGA</label>
                     </div>
                     
                     <div class="form-group">    
-                        <select class="custom-select" id="ram">
+                        <select class="custom-select" id="ram" name="ram">
                             <option selected>Pilih RAM</option>
-                            <option value="2">2 GB</option>
-                            <option value="4">4 GB</option>
-                            <option value="8">8 GB</option>
-                            <option value="16">16 GB</option>
-                            <option value="32">32 GB</option>
+                            <option value="1">4 GB</option>
+                            <option value="2">8 GB</option>
+                            <option value="3">16 GB</option>
+                            <option value="4">32 GB</option>
                         </select>
                         <label class="label ram" for="ram">RAM</label>
                     </div>
 
                     <div class="form-group">    
-                        <select class="custom-select" id="processor">
+                        <select class="custom-select" id="processor" name="processor">
                             <option selected>Pilih Processor</option>
-                            <option value="3">core i3</option>
-                            <option value="5">core i5</option>
-                            <option value="7">core i7</option>
-                            <option value="9">core i9</option>
+                            <option value="1">core i3</option>
+                            <option value="2">core i5</option>
+                            <option value="3">core i7</option>
+                            <option value="4">core i9</option>
                         </select>
                         <label class="label processor" for="processor">Processor</label>
                     </div>
@@ -94,55 +93,20 @@
                 </div>
             </div>
             <!-- hasil -->
+            <?php $no = 1; 
+            foreach($hasil as $data) : ?>
             <div class="card">
                 <div class="card-header">
-                    <span>1</span>
+                    <span><?= $no ?></span>
                 </div>
                 <div class="card-body">
-                    <span class="alter-name">ASUS ROG STRIX GL503GE</span>
-                    <span class="alter-nilai">Nilai : 0,835</span>
+                    <span class="alter-name"><?= $data->laptop ?></span>
+                    <span class="alter-nilai">Nilai : <?= $data->Total ?></span>
                  </div>
             </div>
-            <!-- hasil -->
-            <div class="card">
-                <div class="card-header">
-                    <span>2</span>
-                </div>
-                <div class="card-body">
-                    <span class="alter-name">Acer Nitro 7 with Intel 9th gen</span>
-                    <span class="alter-nilai">Nilai : 0,7321</span>
-                 </div>
-            </div>
-            <!-- hasil -->
-            <div class="card">
-                <div class="card-header">
-                    <span>3</span>
-                </div>
-                <div class="card-body">
-                    <span class="alter-name">MSI GT75 Titan 8SG i9-8950HK</span>
-                    <span class="alter-nilai">Nilai : 0,72835</span>
-                 </div>
-            </div>
-            <!-- hasil -->
-            <div class="card">
-                <div class="card-header">
-                    <span>4</span>
-                </div>
-                <div class="card-body">
-                    <span class="alter-name">Gigabyte Aero 15-Y9 i9-8950HK</span>
-                    <span class="alter-nilai">Nilai : 0,6521</span>
-                 </div>
-            </div>
-            <!-- hasil -->
-            <div class="card">
-                <div class="card-header">
-                    <span>5</span>
-                </div>
-                <div class="card-body">
-                    <span class="alter-name">Predator Helios 300 with Intel 9th gen</span>
-                    <span class="alter-nilai">Nilai : 0,5934</span>
-                 </div>
-            </div>          
+            <?php 
+            $no++;
+        endforeach; ?>
         </div>
     </div>
 </div>

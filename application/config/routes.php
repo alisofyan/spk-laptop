@@ -52,3 +52,18 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 $route['default_controller'] = 'index';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
+
+// simpan
+$route['simpan'] = 'index/simpan';
+
+// hitung
+$route['hitung'] = 'index/hitung';
+
+// hapus saw
+$route['hapus'] = 'index/hapusSaw';
+
+// hapus item
+$route['hapusItem/(:num)'] = 'index/hapusItem/$1';
+
+// tambah dan hitung
+$route['tambah_hitung'] = 'index/tambahHitung';

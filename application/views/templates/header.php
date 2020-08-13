@@ -36,7 +36,7 @@
   <div class="navbar-collapse collapse w-100 order-3 dual-collapse2 collapse" id="navbarNavAltMarkup">
       <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-              <a class="nav-link home-index" href="<?= base_url(); ?>">Home</a>
+              <a class="nav-link home-index" href="<?= base_url('hapus'); ?>">Home</a>
           </li>
           <li class="nav-item">
               <a class="nav-link about-index" href="<?= base_url('about'); ?>">About Us</a>
