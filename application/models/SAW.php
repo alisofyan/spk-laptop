@@ -76,4 +76,16 @@ class SAW extends CI_Model{
             return $dataSaw;
         }
     }
+
+    public function getSortRangking()
+    {
+        $this->db->order_by('Rangking', 'ASC');
+        $query = $this->db->get('saw');
+        if($query->num_rows() > 0){
+            foreach ( $query->result() as $row) {
+                $dataSaw[] = $row;
+            }
+            return $dataSaw;
+        }
+    }
 }
