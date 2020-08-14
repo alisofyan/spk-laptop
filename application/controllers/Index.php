@@ -203,6 +203,7 @@ class Index extends CI_Controller {
         /**
          * Mengambil data yang sudah di rangking
          */
+        print_r($this->SAW->getSortRangking());
         $data['hasil'] = $this->getDataRangking();
         $this->load->view('templates/header', $data);
         $this->load->view('home/hasil', $data);
@@ -396,18 +397,7 @@ class Index extends CI_Controller {
             $this->SAW->update($dataUpdate, $where);
             $no++;
         }
-        return $this->SAW->getAll();
+        return $this->SAW->getSortRangking();
     }
 
-    public function getSortTotalByDesc()
-    {
-        $this->db->order_by('Total', 'DESC');
-        $query = $this->db->get('saw');
-        if($query->num_rows() > 0){
-            foreach ( $query->result() as $row) {
-                $dataSaw[] = $row;
-            }
-            return $dataSaw;
-        }
-    }
 }

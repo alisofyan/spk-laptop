@@ -93,20 +93,17 @@
                 </div>
             </div>
             <!-- hasil -->
-            <?php $no = 1; 
-            foreach($hasil as $data) : ?>
+            <?php foreach($hasil as $data) : ?>
             <div class="card">
                 <div class="card-header">
-                    <span><?= $no ?></span>
+                    <span><?= $data->Rangking ?></span>
                 </div>
                 <div class="card-body">
                     <span class="alter-name"><?= $data->laptop ?></span>
                     <span class="alter-nilai">Nilai : <?= $data->Total ?></span>
                  </div>
             </div>
-            <?php 
-            $no++;
-        endforeach; ?>
+            <?php endforeach; ?>
         </div>
     </div>
 </div>
